@@ -1,1 +1,285 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ruda';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ruda Regular'), local('Ruda-Regular'), url(https://fonts.gstatic.com/s/ruda/v11/k3kfo8YQJOpFqngdbQ.ttf) format('truetype');
+}
+html,
+body {
+  font-size: 62.5%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+header {
+  font-size: 2rem;
+  height: 5vh;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav .navlinks {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 5vh;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: darkcyan;
+}
+.CTA {
+  font-size: 2rem;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-color: lightblue;
+  margin-bottom: 5%;
+  font-family: 'Ruda', sans-serif;
+}
+@media (max-width: 500px) {
+  .CTA {
+    margin-bottom: 0%;
+    height: 30vh;
+  }
+}
+.CTA .tophalfcta {
+  border-bottom: 1px  solid darkcyan;
+}
+@media (max-width: 500px) {
+  .CTA .tophalfcta {
+    flex-direction: column;
+    padding-top: 10%;
+  }
+}
+.CTA .tophalfcta h1 {
+  font-size: 6rem;
+}
+@media (max-width: 500px) {
+  .CTA .tophalfcta h1 {
+    flex-direction: column;
+    font-size: 3rem;
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .CTA .tophalfcta img {
+    display: none;
+  }
+}
+.CTA .tophalfcta h2 {
+  padding: 1% 0;
+}
+.CTA .bottomhalfcta {
+  font-style: italic;
+}
+.CTA .bottomhalfcta p {
+  padding: 1% 0;
+}
+.CTA .bottomhalfcta .cta-btn {
+  background-color: darkcyan;
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: 1%;
+  cursor: pointer;
+}
+.CTA .bottomhalfcta .cta-btn:hover {
+  background-color: red;
+}
+.content {
+  font-size: 2rem;
+  width: 100%;
+}
+.content .contenttop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+@media (max-width: 500px) {
+  .content .contenttop {
+    flex-direction: column;
+  }
+}
+.content .contenttop li {
+  border: 1px solid grey;
+  padding: 2%;
+  padding-left: 4%;
+}
+.content .contenttop h2 {
+  font-size: 3rem;
+}
+.content .contenttop div {
+  width: 49%;
+}
+@media (max-width: 500px) {
+  .content .contenttop div {
+    width: 100%;
+  }
+}
+.content .contentbottom {
+  height: 50vh;
+}
+.content .contentbottom table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.content .contentbottom table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.content .contentbottom table td,
+.content .contentbottom table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.content .contentbottom h2 {
+  font-size: 3rem;
+}
