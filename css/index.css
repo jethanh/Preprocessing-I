@@ -201,6 +201,9 @@ header nav a:hover {
     padding-top: 10%;
   }
 }
+.CTA .tophalfcta .imgdiv {
+  width: 20%;
+}
 .CTA .tophalfcta h1 {
   font-size: 6rem;
 }
@@ -228,8 +231,7 @@ header nav a:hover {
 .CTA .bottomhalfcta .cta-btn {
   background-color: darkcyan;
   font-size: 2rem;
-  border: 1px solid black;
-  border-radius: 5%;
+  border: 0px solid red;
   padding: 1%;
   cursor: pointer;
 }
