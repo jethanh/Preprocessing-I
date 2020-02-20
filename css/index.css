@@ -267,7 +267,7 @@ header nav a:hover {
   }
 }
 .content .contentbottom {
-  height: 50vh;
+  height: 35vh;
 }
 .content .contentbottom table {
   font-family: arial, sans-serif;
@@ -292,4 +292,15 @@ header nav a:hover {
 }
 .content .contentbottom h2 {
   font-size: 3rem;
+}
+footer {
+  width: 204.05%;
+  background-color: darkcyan;
+  color: white;
+  height: 7vh;
+  margin-left: -52%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
