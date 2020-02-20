@@ -197,6 +197,7 @@ header nav a:hover {
 }
 @media (max-width: 500px) {
   .CTA .tophalfcta {
+    display: flex;
     flex-direction: column;
     padding-top: 10%;
   }
@@ -209,6 +210,7 @@ header nav a:hover {
 }
 @media (max-width: 500px) {
   .CTA .tophalfcta h1 {
+    display: flex;
     flex-direction: column;
     font-size: 3rem;
     margin-bottom: 10%;
@@ -249,6 +251,7 @@ header nav a:hover {
 }
 @media (max-width: 500px) {
   .content .contenttop {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -270,6 +273,11 @@ header nav a:hover {
 }
 .content .contentbottom {
   height: 35vh;
+}
+@media (max-width: 500px) {
+  .content .contentbottom {
+    margin-bottom: 15%;
+  }
 }
 .content .contentbottom table {
   font-family: arial, sans-serif;
